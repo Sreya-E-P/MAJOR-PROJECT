@@ -1,5 +1,5 @@
 ﻿# MAJOR-PROJECT
-# LLM Security Framework - Enterprise Edition 🛡️
+# LLM Security Framework 🛡️
 
 ## 🎯 Overview
 A comprehensive **M.Tech Research Project** implementing an advanced LLM security framework with **ensemble attack detection**, **CVSS 4.0 scoring**, **MITRE ATT&CK mappings**, and **professional PDF reporting**. Features **Garak** and **PyRIT** integration for multi-turn conversation security analysis.
@@ -593,3 +593,4 @@ If you use this framework in academic research, please cite:
 
   <p>M.Tech Project | Advanced LLM Security Framework</p>
 </div>
+
