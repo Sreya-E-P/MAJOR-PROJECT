@@ -1,0 +1,290 @@
+.mitre-matrix {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.mitre-matrix h4 {
+  margin: 0 0 1.5rem 0;
+  color: #2c3e50;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #8E44AD;
+  padding-bottom: 0.5rem;
+}
+
+.mitre-matrix h5 {
+  margin: 1.5rem 0 1rem 0;
+  color: #34495e;
+  font-size: 1.1rem;
+}
+
+.no-mitre-data {
+  text-align: center;
+  padding: 2rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Techniques Section */
+.techniques-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.technique-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #8E44AD;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.technique-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.technique-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.technique-id {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  color: #2c3e50;
+  background: #e9ecef;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.tactic-badge {
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.technique-name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.technique-description {
+  color: #6c757d;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Tactics Section */
+.tactics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.tactic-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tactic-card:hover {
+  transform: translateY(-2px);
+}
+
+.tactic-header {
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.tactic-content {
+  padding: 1rem;
+}
+
+.attack-item {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.attack-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.attack-type {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.technique-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.technique-tag {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+}
+
+/* Coverage Section */
+.coverage-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.coverage-score {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.score-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.score-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.coverage-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item .label {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.detail-item .value {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Mitigations Section */
+.mitigations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mitigation-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #27ae60;
+}
+
+.mitigation-id {
+  background: #27ae60;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  flex-shrink: 0;
+  min-width: 60px;
+  text-align: center;
+}
+
+.mitigation-text {
+  color: #2c3e50;
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* Description Section */
+.description-section {
+  background: #e8f4fd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.mitre-description {
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .techniques-grid,
+  .tactics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-score {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .mitigation-item {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .mitigation-id {
+    align-self: flex-start;
+  }
+}

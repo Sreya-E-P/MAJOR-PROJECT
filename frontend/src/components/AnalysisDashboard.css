@@ -1,0 +1,482 @@
+.analysis-dashboard {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.dashboard-header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.status-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.tool-status {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.tool-status span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status-indicator {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-indicator.healthy {
+  background: rgba(46, 204, 113, 0.2);
+  color: #27ae60;
+  border: 1px solid #27ae60;
+}
+
+.status-indicator.unhealthy {
+  background: rgba(231, 76, 60, 0.2);
+  color: #c0392b;
+  border: 1px solid #c0392b;
+}
+
+.dashboard-content {
+  padding: 2rem;
+}
+
+.scan-description {
+  background: #e3f2fd;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #2196f3;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.description-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.description-text {
+  color: #1976d2;
+  line-height: 1.5;
+}
+
+.description-text strong {
+  color: #0d47a1;
+}
+
+.config-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.analysis-controls-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.analysis-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.analyze-btn {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 54px;
+}
+
+.analyze-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(39, 174, 96, 0.4);
+}
+
+.analyze-btn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.analyze-btn.analyzing {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  font-weight: 500;
+}
+
+.results-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  margin-bottom: 2rem;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.results-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.results-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.download-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+.download-btn:hover {
+  background: #2980b9;
+}
+
+.analysis-id {
+  background: #e9ecef;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+.executive-summary {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #3498db;
+}
+
+.executive-summary h4 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.risk-level {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.risk-level.critical { 
+  background: #f8d7da; 
+  color: #721c24; 
+  border: 2px solid #dc3545;
+}
+
+.risk-level.high { 
+  background: #fff3cd; 
+  color: #856404; 
+  border: 2px solid #ffc107;
+}
+
+.risk-level.medium { 
+  background: #d1ecf1; 
+  color: #0c5460; 
+  border: 2px solid #17a2b8;
+}
+
+.risk-level.low { 
+  background: #d4edda; 
+  color: #155724; 
+  border: 2px solid #28a745;
+}
+
+.risk-level.none { 
+  background: #e2e3e5; 
+  color: #383d41; 
+  border: 2px solid #6c757d;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.summary-item .label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.summary-item .value {
+  color: #2c3e50;
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+}
+
+.recommendations {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.recommendations h4 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recommendation-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #e8f4fd;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.rec-number {
+  font-weight: bold;
+  color: #3498db;
+  min-width: 20px;
+}
+
+.rec-text {
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .status-container {
+    align-items: center;
+  }
+
+  .tool-status {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .results-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .results-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-content {
+    padding: 1rem;
+  }
+
+  .scan-description {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Add these styles at the end of your AnalysisDashboard.css */
+
+/* Download Notification */
+.download-notification {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: slideIn 0.5s ease-out;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+}
+
+.download-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.download-message strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.download-message p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Report Link */
+.report-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.report-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Analysis Controls Updates */
+.analysis-controls-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  border: 1px solid #e9ecef;
+}
+
+.analyze-btn {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 54px;
+}
+
+.analyze-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(39, 174, 96, 0.4);
+}
+
+.analyze-btn.analyzing {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.analyze-btn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
+}

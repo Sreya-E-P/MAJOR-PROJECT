@@ -1,0 +1,187 @@
+.real-time-log {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.log-header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.log-stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.log-count {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.clear-logs {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.3s;
+}
+
+.clear-logs:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.log-container {
+  height: 300px;
+  overflow-y: auto;
+  background: #1a1a1a;
+  padding: 1rem;
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-size: 0.85rem;
+}
+
+.no-logs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.log-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+  gap: 0.75rem;
+}
+
+.log-entry:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.log-entry.success {
+  color: #28a745;
+}
+
+.log-entry.error {
+  color: #dc3545;
+}
+
+.log-entry.warning {
+  color: #ffc107;
+}
+
+.log-entry.start {
+  color: #17a2b8;
+}
+
+.log-entry.progress {
+  color: #6f42c1;
+}
+
+.log-entry.connection {
+  color: #20c997;
+}
+
+.log-entry.info {
+  color: #6c757d;
+}
+
+.log-timestamp {
+  color: #495057;
+  font-size: 0.75rem;
+  min-width: 70px;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.log-icon {
+  font-size: 0.9rem;
+  min-width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.log-message {
+  flex: 1;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.log-footer {
+  background: #f8f9fa;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.log-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #495057;
+}
+
+.legend-icon {
+  font-size: 0.9rem;
+}
+
+/* Scrollbar Styling for Log Container */
+.log-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.log-container::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.log-container::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 3px;
+}
+
+.log-container::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .log-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .log-legend {
+    gap: 1rem;
+  }
+
+  .legend-item {
+    font-size: 0.75rem;
+  }
+}

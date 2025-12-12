@@ -1,0 +1,5 @@
+model:
+  name: gpt2
+  type: huggingface
+probes:
+  - dan
