@@ -426,7 +426,7 @@ Edit `backend/mitre_mappings/custom_mappings.json`:
 |---------------|--------------|----------|
 | **Fast Analysis** | 1-3 seconds | Research model only |
 | **Log Analysis** | 5-10 seconds | File processing + ML |
-| **Full Scan** | 30+ seconds | Garak + PyRIT + Ensemble |
+| **Full Scan** | Variable | Garak + PyRIT + Ensemble |
 
 ## 🛠️ Development
 
@@ -593,4 +593,5 @@ If you use this framework in academic research, please cite:
 
   <p>M.Tech Project | Advanced LLM Security Framework</p>
 </div>
+
 
