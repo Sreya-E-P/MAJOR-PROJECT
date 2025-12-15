@@ -37,6 +37,9 @@ A comprehensive **M.Tech Research Project** implementing an advanced LLM securit
 - **Responsive Design** - Mobile-friendly interface
 
 ## Demo
+## 🎥 Project Demo
+
+[![Watch the demo](https://img.youtube.com/vi/J8FYcEb45mw/maxresdefault.jpg)](https://www.youtube.com/watch?v=J8FYcEb45mw)
 
 ## 📁 Project Structure
 
@@ -569,6 +572,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
   <p>M.Tech Project | Advanced LLM Security Framework</p>
 </div>
+
 
 
 
