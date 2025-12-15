@@ -563,35 +563,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **MITRE Corporation** for the ATT&CK framework
 - **CVSS SIG** for the Common Vulnerability Scoring System
 
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/llm-security-framework/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/llm-security-framework/discussions)
-- **Email**: security-framework@example.com
-
-## 📊 Citation
-
-If you use this framework in academic research, please cite:
-
-```bibtex
-@software{llm_security_framework_2024,
-  title = {LLM Security Framework: Enterprise Edition},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/llm-security-framework},
-  note = {Advanced ensemble detection with CVSS 4.0 scoring and MITRE ATT\&CK mappings}
-}
-```
-
----
-
-**⚠️ Disclaimer**: This tool is for **security research and educational purposes only**. Use responsibly and only on systems you own or have permission to test.
-
-**🔐 Security First**: Always follow responsible disclosure practices and comply with applicable laws and regulations.
-
 ---
 
   <p>M.Tech Project | Advanced LLM Security Framework</p>
 </div>
+
 
 
